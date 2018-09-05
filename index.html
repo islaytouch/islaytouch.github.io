@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>IslayTouch - ○と→でゲームを作ろう</title>
+
+  <link rel="shortcut icon" href="favicon.ico">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-inverse navbar_overwrite" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <div class="navbar-main">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger nav-link_overwrite" href="#about">ホーム</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger nav-link_overwrite" href="#features">特長</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger nav-link_overwrite" href="#islay">Islayとは</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger nav-link_overwrite" href="#contact">コンタクト</a>
+            </li>
+            <li class="nav-divider"></li>
+            <li>
+              <a class="nav-link nav-link_overwrite" href="islaytouch_intro.pdf" target="_blank">チュートリアル</a>
+            </li>
+            <li>
+              <a class="nav-link nav-link_overwrite" href="http://puma.cis.ibaraki.ac.jp/research/islay.html#islaytouch" target="_blank">マニュアル</a>
+            </li>
+            <li>
+              <a class="nav-link nav-link_overwrite" href="https://coderdojo-mito.com/about-us/" target="_blank" id="nav-link_image_dojo"
+                title="CoderDojo">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="nav navbar-nav navbar-right invisible_element">
+          <li class="active">
+            <a class="nav-link nav-link_overwrite" href="index.html">日本語</a>
+          </li>
+          <li>
+            <a class="nav-link nav-link_overwrite" href="en/index.html">English</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--
+  <header class="bg-primary text-white islay_theme_bg_color_green">
+    <div class="container text-center">
+      <h1>Welcome to Scrolling Nav</h1>
+      <p class="lead">A landing page template freshly redesigned for Bootstrap 4</p>
+    </div>
+  </header>
+  -->
+
+  <section id="about" class="islay_theme_bg_color_bright">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12 centered_container">
+          <img src="image/islaytouch_logo.png" alt="IslayTouch_logo" class="img-responsive img-responsive-overwrite logo_image" />
+          <h2 style="margin: 30px;">状態遷移図に基づいたビジュアルプログラミング言語</h2>
+          <br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5" style="margin-bottom: 30px;">
+          <p>
+            <img class="img-responsive" src="image/device_art.png" alt="スクリーンショット" />
+          </p>
+        </div>
+        <div class="col-md-7">
+          <h4 style="line-height: 40px;text-indent: 1em;margin-top: 40px;">「○」と「→」の組み合わせで状態遷移図を描くことにより、 アニメーションやゲームを簡単に作れる子供向けの教育用プログラミング環境です。
+          </h4>
+          <div class="row" id="store_button_container">
+            <div class="col-6 text-right">
+              <a href="https://play.google.com/store/apps/details?id=net.z1studio.islaytouch" class="btn btn-lg store_button_link" role="button"
+                data-toggle="tooltip" data-placement="bottom" title="右クリックするとQRコードが表示されます" oncontextmenu="$('#modal_qr_google').modal('show');return false;"
+                target="_blank">
+                <img src="image/gp_jp_600.png" class="store_button">
+              </a>
+            </div>
+            <div class="col-6 text-left">
+              <a href="https://www.amazon.co.jp/gp/mas/dl/android?p=net.z1studio.islaytouch" class="btn btn-lg store_button_link" role="button"
+                data-toggle="tooltip" data-placement="bottom" title="右クリックするとQRコードが表示されます" oncontextmenu="$('#modal_qr_amazon').modal('show');return false;"
+                target="_blank">
+                <img src="image/aa_jp_600.png" class="store_button">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <!--
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>About this page</h2>
+          <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a
+            boilerplate or starting point for you own landing page designs! This template features:</p>
+          <ul>
+            <li>Clickable nav links that smooth scroll to page sections</li>
+            <li>Responsive behavior when clicking nav links perfect for a one page website</li>
+            <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
+            <li>Minimal custom CSS so you are free to explore your own unique design options</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    -->
+  </section>
+
+  <section id="features" class="bg-light islay_theme_bg_color_white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="text-center">
+            <h2>「○」と「→」でプログラミング</h2>
+          </div>
+          <br />
+          <p class="intro_text_paragraph">
+            ○と→で状態遷移図を書いてキャラクタのうごきを決めましょう。 あなたの設計図どおりにキャラクタたちが動き出します。 キャラクタの種類を増やしたり、見た目を変えたりして、工夫しだいでいろんなゲームが作れます。
+
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img class="img-responsive vertical_centered" src="image/ss_1.png" alt="状態遷移図の例" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="islay_theme_bg_color_transition">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <img class="img-responsive vertical_centered" src="image/ss_2.png" alt="ユーザーインターフェース" />
+        </div>
+        <div class="col-md-7 ">
+          <div class="text-center">
+            <h2>タブレットのために最適化されたUI</h2>
+          </div>
+          <br />
+          <p class="intro_text_paragraph">
+            タブレット端末のハードウェアの特徴に合わせて、エディタのUIが再設計されています。 高さが自動的に変わるキャラクタリストや必要なときだけに現れる操作パネルなど、 限られた画面サイズが最大限に有効利用されています。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="islay_theme_bg_color_white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="text-center">
+            <h2>タッチジェスチャーで操作可能</h2>
+          </div>
+          <br />
+          <p class="intro_text_paragraph">
+            画面のズームや移動はもちろん、これまでマウスで行った操作が全てタッチジェスチャーに置き換えられています。 ドラッグ・アンド・ドロップで状態の作成や2本の指を使った矢印の追加など、タブレット端末ならではの使い方を楽しみましょう！
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img class="img-responsive vertical_centered" src="image/ss_3.png" alt="マルチタッチジェスチャー" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="islay" class="islay_theme_bg_color_transition">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <img class="img-responsive vertical_centered" src="image/ss_4.png" alt="インスタントプレーヤ" />
+        </div>
+        <div class="col-md-7 ">
+          <div class="text-center">
+            <h2>インスタントプレーヤ</h2>
+          </div>
+          <br />
+          <p class="intro_text_paragraph">
+            ボタン一つでモードを切り替えて、 作っている途中のプログラムをいつでもその場で実行できます。 必要に応じてゲームパッドのボタンやキーボードが表示されますので、タブレット端末上でもキー入力が実現できます。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="islay_theme_bg_color_green">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="text-left">
+            <h2>Islayとは</h2>
+          </div>
+          <br />
+          <p class="intro_text_paragraph">
+            Islay（アイラ）は茨城大学で開発された状態遷移図に基づいたビジュアルプログラミング言語です。 2005年に最初のPC版（右の図）が開発され、その後、3Dアニメーションの作成に対応したバージョンや ブラウザ上で手軽に使えるWeb版など、様々なバリエーションが開発されています。
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img class="img-responsive vertical_centered" src="image/ss_5.png" alt="PC版Islay" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="islay_theme_bg_color_dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5" style="padding-right: 50px;">
+          <h3>コンタクト</h3>
+          <p class="contact_p">IslayTouchに関するバグ報告、要望またはその他のお問い合わせは下記メールアドレス宛にお願い致します。
+            <br/>
+            <img src="image/mail_address_white.png" id="mail_copy_btn" alt="z1studio&lt;dot&gt;dev&lt;at&gt;gmail&lt;dot&gt;com">
+            <br/>
+          </p>
+          <span id="mail_copy_prompt" style="vertical-align: top;">（メールアドレスをクリックするとコピーされます）</span>
+        </div>
+        <div class="col-md-3">
+          <h3>開発者リンク</h3>
+          <p class="contact_p">
+            <ul class="contact_ul">
+              <li>
+                <a class="contact_a" href="https://www.facebook.com/Z1Studio" target="_blank">Facebook</a>
+              </li>
+              <li>
+                <a class="contact_a" href="https://www.youtube.com/user/zj13924" target="_blank">Youtube</a>
+              </li>
+            </ul>
+          </p>
+        </div>
+        <div class="col-md-2">
+          <h3>研究室</h3>
+          <p class="contact_p">
+            <ul class="contact_ul">
+              <li>
+                <a class="contact_a" href="http://puma.cis.ibaraki.ac.jp" target="_blank">Team Kamada</a>
+              </li>
+            </ul>
+          </p>
+        </div>
+        <div class="col-md-2 text-center">
+          <button type="button" class="btn btn-outline-light invisible_element" data-toggle="modal" data-target="#modal_version_history">
+            更新履歴
+          </button>
+        </div>
+      </div>
+      <div class="row alert alert-success" role="alert" id="success_alert">
+        メールアドレスがクリップボードにコピーされました。
+      </div>
+      <div class="row alert alert-danger" role="alert" id="failure_alert">
+        お使いのブラウザはサポートされていないため、メールアドレスのコピーができませんでした。
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 islay_theme_bg_color_white" style="padding-top: 30px !important;padding-bottom: 20px !important;">
+    <div class="container">
+      <p class="m-0 text-center text-black">Copyright &copy; 2018 Z1 Studio, All rights reserved</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
+  <!-- clipboard.js -->
+  <script src="js/clipboard.min.js"></script>
+  <script src="js/click_to_copy.js"></script>
+
+  <script>
+    //tool tips
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
+
+  <svg class="defs-only">
+    <filter id="monochrome" color-interpolation-filters="sRGB" x="0" y="0" height="100%" width="100%">
+      <feColorMatrix type="matrix" values="
+                      0 0 0 0 0.94
+                      0 0 0 0 0.33
+                      0 0 0 0 0.31
+                      0 0 0 1 0" />
+    </filter>
+  </svg>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modal_qr_google" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal_theme_islay modal_qr_code" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal_title_icon" id="modal_icon_google"></div>
+          <h5 class="modal-title" id="exampleModal3Label">Google Playで手に入れよう</h5>
+        </div>
+        <div class="modal-body text-center">
+          <img src="image/qr_googleplay.PNG" class="qr_code_image">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-success" data-dismiss="modal">閉じる</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal_qr_amazon" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal_theme_islay modal_qr_code" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal_title_icon" id="modal_icon_amazon"></div>
+          <h5 class="modal-title" id="exampleModal3Label">amazon appstoreでダウンロード</h5>
+        </div>
+        <div class="modal-body text-center">
+          <img src="image/qr_amazon.PNG" class="qr_code_image">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-success" data-dismiss="modal">閉じる</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal_version_history" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal_theme_islay modal_width_large" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal_title_icon" id="modal_icon_history"></div>
+          <h5 class="modal-title" id="exampleModal3Label">更新履歴</h5>
+        </div>
+        <div class="modal-body modal_body_vscroll">
+          <h4>IslayTouch beta 0.1<span class="version_date">2018/08/04</span></h4>
+          <ul>
+            <li>
+              <span class="listStrong">改良点</span>
+            </li>
+            <ul>
+              <li></li>
+            </ul>
+            <li>
+              <span class="listStrong">修正点</span>
+            </li>
+            <ul>
+              <li></li>
+            </ul>
+          </ul>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-success" data-dismiss="modal">閉じる</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
